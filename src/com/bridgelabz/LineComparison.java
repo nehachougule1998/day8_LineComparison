@@ -1,9 +1,14 @@
 package com.bridgelabz;
 import java.util.Scanner;
 public class LineComparison {
-	public static void main(String[] args) { 
-		System.out.println("welcome to line comparison computation program on master branch");
+
+	public static double Length_Of_Line1;
+    public static double Length_Of_Line2;
+	public static void lineComparison() {
+	}
+	public static void Comparelinelength() {
 		Scanner ch = new Scanner(System.in);
+		
 		System.out.println("enter the coordinates of x1 & y1 : ");
 		int x1 = ch.nextInt();
 		int y1 = ch.nextInt();
@@ -22,15 +27,22 @@ public class LineComparison {
 		
 		System.out.println("first line length is : " + length1 );
 		System.out.println("second line length is : " + length2 );
-		   
-		if(length1 == length2)
-		    System.out.println("both lines are equal");
-		else if(length1 > length2 )
-				System.out.println("length of line1 is > than line2 ");
-		else 
-			 System.out.println("length of line1 is < than line2 " );
+		
+		   if(length1 == length2)
+			    System.out.println("both lines are equal");
+			else if(length1 > length2 )
+					System.out.println("length of line1 is > than line2 ");
+			else 
+				 System.out.println("length of line1 is < than line2 " );
+	   }
+			
+         public static void main(String[] args) {
+        	 System.out.println("welcome to line comparison computation program on master branch");
+        	  LineComparison.lineComparison();
+        	  Comparelinelength();
 		}
-   }          
+		}
+            
 			 
 
 
